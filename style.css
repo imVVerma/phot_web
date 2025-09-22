@@ -1,73 +1,66 @@
-/* General Styling */
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    background: linear-gradient(to bottom, #000428, #004e92);
-    color: white;
-    padding-top: 60px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Photography - Vaibhav's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Vaibhav's Photography</div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="sunset.html">Sunset</a>
+            <a href="wildlife.html">Wildlife</a>
+            <a href="city.html">City Life</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+    </header>
 
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
+    <div class="gallery-container">
+        <h1>Nature Photography</h1>
+        <p style="text-align: center; font-size: 1.2rem; margin-bottom: 30px; color: #ffcc00;">
+            Exploring the serene beauty and raw power of the natural world
+        </p>
+        
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/nature_thumbnail.jpg" alt="Mountain Landscape" onerror="this.style.display='none'">
+                <div class="caption">Mountain Views</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/forest_path.jpg" alt="Forest Trail" onerror="this.style.display='none'">
+                <div class="caption">Forest Trails</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/river_flow.jpg" alt="Flowing River" onerror="this.style.display='none'">
+                <div class="caption">Calm Rivers</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/waterfall.jpg" alt="Waterfall">
+                <div class="caption">Cascading Waters</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/meadow_flowers.jpg" alt="Flower Meadow">
+                <div class="caption">Wildflower Meadows</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/lake_reflection.jpg" alt="Lake Reflection">
+                <div class="caption">Mirror Lakes</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/rock_formation.jpg" alt="Rock Formation">
+                <div class="caption">Ancient Rocks</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/snow_peaks.jpg" alt="Snow Capped Peaks">
+                <div class="caption">Snow Capped Peaks</div>
+            </div>
+        </div>
+    </div>
 
-.nav a {
-    color: white;
-    margin-left: 15px;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-.nav a:hover {
-    color: #ffcc00;
-}
-
-.gallery-container {
-    padding: 20px;
-    text-align: center;
-}
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-}
-
-.gallery-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-.gallery-item img {
-    width: 100%;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-.gallery-item img:hover {
-    transform: scale(1.05);
-}
-
-.caption {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    width: 90%;
-    text-align: center;
-}
+    <script src="script.js"></script>
+</body>
+</html>
